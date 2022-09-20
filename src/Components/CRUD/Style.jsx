@@ -4,7 +4,13 @@ import { secundary, dark } from "../../Styles/colors";
 
 const Header = styled.header`
 
-    border-radius: 2rem;
+    margin-top: 5%;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     background: ${ secundary };
 
@@ -14,14 +20,22 @@ const Header = styled.header`
 `;
 
 const Titulo = styled.h1`
+ 
+    font-size: 2.5rem;
+    color: antiquewhite;
+`;
 
-    font-size: 1.5rem;
+const Divisinha = styled.div`
+    
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 
 `;
 
 const CampoTexto = styled.input`
 
-    width: 70%;
+    width: 80%;
 
     padding: 2rem;
 
@@ -35,7 +49,13 @@ const CampoTexto = styled.input`
 
 const Botao = styled.button`
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 50%;
 
 `;
 
-export { Header, Titulo, CampoTexto }
+export { Header, Titulo, CampoTexto, Botao, Divisinha }
